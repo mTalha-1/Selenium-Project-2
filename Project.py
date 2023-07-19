@@ -37,14 +37,14 @@ def login():
     try:
         driver.implicitly_wait(20)
         email = driver.find_element(by='xpath',value='//*[@id="email"]')
-        email.send_keys("muhammadtalhaasif5@gmail.com")
+        email.send_keys("youremail.com")
     except NoSuchElementException as e:
         logging.error(e)
 
     try:
         driver.implicitly_wait(20)
         password = driver.find_element(by='xpath',value='//*[@id="pass"]')
-        password.send_keys("03204878756talha")
+        password.send_keys("yourprofilepassword")
     except NoSuchElementException as e:
         logging.error(e)
         
